@@ -1,17 +1,17 @@
 //
-//  UIImage+QTAlert.m
-//  QTAlertView_Example
+//  UIImage+XUAlert.m
+//  XUAlertView_Example
 //
 //  Created by peng xu on 2019/1/16.
 //  Copyright © 2019 xupeng. All rights reserved.
 //
 
-#import "UIImage+QTAlert.h"
-#import "UIColor+QTAlert.h"
+#import "UIImage+XUAlert.h"
+#import "UIColor+XUAlert.h"
 
-@implementation UIImage (QTAlert)
+@implementation UIImage (XUAlert)
 
-+ (UIImage *)qtAlertImageWithColor:(UIColor *)color {
++ (UIImage *)XUAlertImageWithColor:(UIColor *)color {
     CGSize size = CGSizeMake(1, 1);
     if (!color || size.width <= 0 || size.height <= 0) return nil;
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
@@ -24,8 +24,8 @@
     return image;
 }
 
-+ (UIImage *)qtAlertImageWithString:(NSString *)string {
-    return [self qtAlertImageWithColor:[UIColor qtAlertColorWithString:string]];
++ (UIImage *)XUAlertImageWithString:(NSString *)string {
+    return [self XUAlertImageWithColor:[UIColor XUAlertColorWithString:string]];
 }
 
 @end

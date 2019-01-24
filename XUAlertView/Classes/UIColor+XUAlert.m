@@ -1,16 +1,16 @@
 //
-//  UIColor+QTAlert.m
-//  QTAlertView_Example
+//  UIColor+XUAlert.m
+//  XUAlertView_Example
 //
 //  Created by peng xu on 2019/1/16.
 //  Copyright © 2019 xupeng. All rights reserved.
 //
 
-#import "UIColor+QTAlert.h"
+#import "UIColor+XUAlert.h"
 
-@implementation UIColor (QTAlert)
+@implementation UIColor (XUAlert)
 
-+ (UIColor *)qtAlertColorWithString:(NSString *)colorString {
++ (UIColor *)XUAlertColorWithString:(NSString *)colorString {
     CGFloat alpha = 1.f;
     NSArray *_components = [colorString componentsSeparatedByString:@"^"];
     NSString *_c = colorString;

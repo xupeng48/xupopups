@@ -1,22 +1,22 @@
 //
-//  QTAlertView.m
-//  QTAlertView_Example
+//  XUAlertView.m
+//  XUAlertView_Example
 //
 //  Created by peng xu on 2019/1/11.
 //  Copyright © 2019 xupeng. All rights reserved.
 //
 
-#import "QTAlertView.h"
-#import "UIColor+QTAlert.h"
+#import "XUAlertView.h"
+#import "UIColor+XUAlert.h"
 
-@interface QTAlertView ()
+@interface XUAlertView ()
 
 // Data
 @property (nonatomic, copy) UIImage * iconImage;
 @property (nonatomic, copy) UIImage * headerImage;
 @property (nonatomic, copy) NSString * title;
 @property (nonatomic, copy) NSString * message;
-@property (nonatomic, strong) NSMutableArray<QTAlertAction *> * actions;
+@property (nonatomic, strong) NSMutableArray<XUAlertAction *> * actions;
 @property (nonatomic, assign) BOOL showCloseButton;
 @property (nonatomic, copy) void(^closeButtonBlock)(void);
 @property (nonatomic, copy) void(^extraConfig)(UILabel * titleLabel, UILabel * messageLabel);
@@ -38,7 +38,7 @@
 
 @end
 
-@implementation QTAlertView
+@implementation XUAlertView
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
@@ -69,11 +69,11 @@
                              title:(NSString *)title
                            message:(NSString *)message
                         customView:(UIView *)customView {
-    return [[QTAlertView alloc] initWithIconImage:iconImage headerImage:headerImage title:title message:message customView:customView];
+    return [[XUAlertView alloc] initWithIconImage:iconImage headerImage:headerImage title:title message:message customView:customView];
 }
 
 + (instancetype)alertWithCompleteCustomView:(UIView *)view {
-    QTAlertView * alert = [[QTAlertView alloc] initWithIconImage:nil headerImage:nil title:nil message:nil customView:nil];
+    XUAlertView * alert = [[XUAlertView alloc] initWithIconImage:nil headerImage:nil title:nil message:nil customView:nil];
     alert.containerView = view;
     alert.showCloseButton = YES;
     alert.isCompleteCustomView = YES;
@@ -99,7 +99,7 @@
     }
     if (_title) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.textColor = [UIColor qtAlertColorWithString:@"#333333"];
+        _titleLabel.textColor = [UIColor XUAlertColorWithString:@"#333333"];
         if (@available(iOS 8.2, *)) {
             _titleLabel.font = [UIFont systemFontOfSize:18.0 weight:UIFontWeightMedium];
         } else {
@@ -119,7 +119,7 @@
         _messageLabel.textAlignment = NSTextAlignmentCenter;
         _messageLabel.lineBreakMode = NSLineBreakByCharWrapping;
         _messageLabel.backgroundColor = [UIColor clearColor];
-        _messageLabel.textColor = [UIColor qtAlertColorWithString:@"#666666"];
+        _messageLabel.textColor = [UIColor XUAlertColorWithString:@"#666666"];
         _messageLabel.text = _message;
         [_containerView addSubview:_messageLabel];
     }
@@ -130,7 +130,7 @@
         self.extraConfig(_titleLabel, _messageLabel);
     }
     
-    [self.actions enumerateObjectsUsingBlock:^(QTAlertAction *action, NSUInteger idx, BOOL *stop) {
+    [self.actions enumerateObjectsUsingBlock:^(XUAlertAction *action, NSUInteger idx, BOOL *stop) {
         UIButton *button = [action buildButton];
         [button setTitle:action.title forState:UIControlStateNormal];
         button.tag = idx;
@@ -155,7 +155,7 @@
         _closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_closeButton addTarget:self action:@selector(closeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         NSString *bundlePath = [[NSBundle bundleForClass:[self class]].resourcePath
-                                stringByAppendingPathComponent:@"/QTAlertView.bundle"];
+                                stringByAppendingPathComponent:@"/XUAlertView.bundle"];
         NSBundle *resource_bundle = [NSBundle bundleWithPath:bundlePath];
         UIImage *image = [UIImage imageNamed:@"close"
                                     inBundle:resource_bundle
@@ -210,8 +210,8 @@
     offsetY += 20.0;
     CGFloat buttonX = 16.0;
     for (NSInteger i = 0; i < self.actions.count; i ++) {
-        QTAlertAction * currentAction = [self.actions objectAtIndex:i];
-        if (currentAction.layout == QTAlertActionLayoutHalfWidth) {// 占用一半
+        XUAlertAction * currentAction = [self.actions objectAtIndex:i];
+        if (currentAction.layout == XUAlertActionLayoutHalfWidth) {// 占用一半
             if (i != 0 && buttonX == 16.0) offsetY += 12.0;
             [currentAction.attachButton setFrame:CGRectMake(buttonX, offsetY, 118.0, DEFAULT_BUTTON_HEIGHT)];
             if (buttonX == 16.0) {
@@ -224,7 +224,7 @@
         } else {
             if (i != 0) offsetY += 12.0;
             if (buttonX != 16.0) offsetY += DEFAULT_BUTTON_HEIGHT;
-            CGFloat height = currentAction.layout == QTAlertActionLayoutFull ? DEFAULT_BUTTON_HEIGHT : CGRectGetHeight(currentAction.attachButton.bounds) != 0 ? CGRectGetHeight(currentAction.attachButton.bounds) : SHORT_BUTTON_HEIGHT;
+            CGFloat height = currentAction.layout == XUAlertActionLayoutFull ? DEFAULT_BUTTON_HEIGHT : CGRectGetHeight(currentAction.attachButton.bounds) != 0 ? CGRectGetHeight(currentAction.attachButton.bounds) : SHORT_BUTTON_HEIGHT;
             if (buttonX != 16.0) {
                 buttonX = 16.0;
             }
@@ -313,7 +313,7 @@
     self.extraConfig = config;
 }
 
-- (void)addAction:(QTAlertAction *)action {
+- (void)addAction:(XUAlertAction *)action {
     [self.actions addObject:action];
 }
 
@@ -325,7 +325,7 @@
 // MARK: - internal action
 - (void)handleButtonClick:(UIButton *)button {
     if (button.tag >= 0 && button.tag <= self.actions.count) {
-        QTAlertAction * action = [self.actions objectAtIndex:button.tag];
+        XUAlertAction * action = [self.actions objectAtIndex:button.tag];
         if (action.clickBlock) {
             action.clickBlock();
         }
@@ -342,7 +342,7 @@
 
 - (void)handlePan:(UIPanGestureRecognizer *)pan {
     CGPoint point = [pan locationInView:self.containerView];
-    [self.actions enumerateObjectsUsingBlock:^(QTAlertAction * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.actions enumerateObjectsUsingBlock:^(XUAlertAction * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton * button = obj.attachButton;
         button.highlighted = CGRectContainsPoint(button.frame, point);
         button.highlighted = CGRectContainsPoint(button.frame, point);
@@ -374,9 +374,9 @@
 
 // MAKR: - sugar
 
-+ (void)showAlertWithIcon:(UIImage *)icon title:(NSString *)title message:(NSString *)message showClose:(BOOL)isShowClose closeClick:(void (^)(void))closeClick confirmTitle:(NSString *)confirmTitle confirmStyle:(QTAlertActionStyle)confirmStyle confirmClick:(void (^)(void))confirmClick {
-    QTAlertAction *confirmAction = [QTAlertAction actionFullWithTitle:confirmTitle style:confirmStyle onClick:confirmClick];
-    QTAlertView *alert = [[QTAlertView alloc] initWithIconImage:icon headerImage:nil title:title message:message customView:nil];
++ (void)showAlertWithIcon:(UIImage *)icon title:(NSString *)title message:(NSString *)message showClose:(BOOL)isShowClose closeClick:(void (^)(void))closeClick confirmTitle:(NSString *)confirmTitle confirmStyle:(XUAlertActionStyle)confirmStyle confirmClick:(void (^)(void))confirmClick {
+    XUAlertAction *confirmAction = [XUAlertAction actionFullWithTitle:confirmTitle style:confirmStyle onClick:confirmClick];
+    XUAlertView *alert = [[XUAlertView alloc] initWithIconImage:icon headerImage:nil title:title message:message customView:nil];
     [alert addAction:confirmAction];
     if (isShowClose) {
         [alert addCloseButtonWithAction:closeClick];
@@ -384,18 +384,18 @@
     [alert display];
 }
 
-+ (void)showAlertWithTitle:(NSString *)title message:(NSString *)message showClose:(BOOL)isShowClose closeClick:(void (^)(void))closeClick confirmTitle:(NSString *)confirmTitle confirmStyle:(QTAlertActionStyle)confirmStyle confirmClick:(void (^)(void))confirmClick {
++ (void)showAlertWithTitle:(NSString *)title message:(NSString *)message showClose:(BOOL)isShowClose closeClick:(void (^)(void))closeClick confirmTitle:(NSString *)confirmTitle confirmStyle:(XUAlertActionStyle)confirmStyle confirmClick:(void (^)(void))confirmClick {
     [self showAlertWithIcon:nil title:title message:message showClose:isShowClose closeClick:closeClick confirmTitle:confirmTitle confirmStyle:confirmStyle confirmClick:confirmClick];
 }
 
-+ (void)showAlertWithTitle:(NSString *)title message:(NSString *)message confirmTitle:(NSString *)confirmTitle confirmStyle:(QTAlertActionStyle)confirmStyle confirmClick:(void (^)(void))confirmClick {
++ (void)showAlertWithTitle:(NSString *)title message:(NSString *)message confirmTitle:(NSString *)confirmTitle confirmStyle:(XUAlertActionStyle)confirmStyle confirmClick:(void (^)(void))confirmClick {
     [self showAlertWithTitle:title message:message showClose:NO closeClick:nil confirmTitle:confirmTitle confirmStyle:confirmStyle confirmClick:confirmClick];
 }
 
 + (void)showAlertWithIcon:(UIImage *)icon title:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelClick:(void (^)(void))cancelClick confirmTitle:(NSString *)confirmTitle confirmClick:(void (^)(void))confirmClick {
-    QTAlertAction *cancelAction = [QTAlertAction actionHalfWidthWithTitle:cancelTitle style:QTAlertActionStyleNotRecommend onClick:cancelClick];
-    QTAlertAction *confirmAction = [QTAlertAction actionHalfWidthWithTitle:confirmTitle style:QTAlertActionStyleRecommend onClick:confirmClick];
-    QTAlertView *alert = [[QTAlertView alloc] initWithIconImage:icon headerImage:nil title:title message:message customView:nil];
+    XUAlertAction *cancelAction = [XUAlertAction actionHalfWidthWithTitle:cancelTitle style:XUAlertActionStyleNotRecommend onClick:cancelClick];
+    XUAlertAction *confirmAction = [XUAlertAction actionHalfWidthWithTitle:confirmTitle style:XUAlertActionStyleRecommend onClick:confirmClick];
+    XUAlertView *alert = [[XUAlertView alloc] initWithIconImage:icon headerImage:nil title:title message:message customView:nil];
     [alert addAction:cancelAction];
     [alert addAction:confirmAction];
     [alert display];

@@ -1,18 +1,18 @@
 //
-//  QTAlertView.h
-//  QTAlertView_Example
+//  XUAlertView.h
+//  XUAlertView_Example
 //
 //  Created by peng xu on 2019/1/11.
 //  Copyright © 2019 xupeng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "QTAlertAction.h"
+#import "XUAlertAction.h"
 
 /**
  蜻蜓风格的弹窗
  */
-@interface QTAlertView : UIView
+@interface XUAlertView : UIView
 
 /**
  创建一个弹窗实例
@@ -34,7 +34,7 @@
 /**
  添加动作，按钮会按照添加的顺序由高到低排列
  */
-- (void)addAction:(QTAlertAction * _Nonnull)action;
+- (void)addAction:(XUAlertAction * _Nonnull)action;
 
 /**
  添加右上角的圆形关闭按钮，并添加动作
@@ -80,7 +80,7 @@
  @param confirmStyle 确认按钮风格
  @param confirmClick 确认按钮点击事件
  */
-+ (void)showAlertWithIcon:(UIImage * _Nullable)icon title:(NSString * _Nullable)title message:(NSString * _Nullable)message showClose:(BOOL)isShowClose closeClick:(nullable void(^)(void))closeClick confirmTitle:(NSString * _Nullable)confirmTitle confirmStyle:(QTAlertActionStyle)confirmStyle confirmClick:(nullable void(^)(void))confirmClick;
++ (void)showAlertWithIcon:(UIImage * _Nullable)icon title:(NSString * _Nullable)title message:(NSString * _Nullable)message showClose:(BOOL)isShowClose closeClick:(nullable void(^)(void))closeClick confirmTitle:(NSString * _Nullable)confirmTitle confirmStyle:(XUAlertActionStyle)confirmStyle confirmClick:(nullable void(^)(void))confirmClick;
 
 /**
  底部单按钮 右上角关闭按钮 AlertView
@@ -93,7 +93,7 @@
  @param confirmStyle 确认按钮风格
  @param confirmClick 确认按钮点击事件
  */
-+ (void)showAlertWithTitle:(NSString * _Nullable)title message:(NSString * _Nullable)message showClose:(BOOL)isShowClose closeClick:(nullable void(^)(void))closeClick confirmTitle:(NSString * _Nullable)confirmTitle confirmStyle:(QTAlertActionStyle)confirmStyle confirmClick:(nullable void(^)(void))confirmClick;
++ (void)showAlertWithTitle:(NSString * _Nullable)title message:(NSString * _Nullable)message showClose:(BOOL)isShowClose closeClick:(nullable void(^)(void))closeClick confirmTitle:(NSString * _Nullable)confirmTitle confirmStyle:(XUAlertActionStyle)confirmStyle confirmClick:(nullable void(^)(void))confirmClick;
 
 /**
  底部单按钮 AlertView
@@ -104,7 +104,7 @@
  @param confirmStyle 确认按钮风格
  @param confirmClick 确认按钮点击事件
  */
-+ (void)showAlertWithTitle:(NSString * _Nullable)title message:(NSString * _Nullable)message confirmTitle:(NSString * _Nullable)confirmTitle confirmStyle:(QTAlertActionStyle)confirmStyle confirmClick:(nullable void(^)(void))confirmClick;
++ (void)showAlertWithTitle:(NSString * _Nullable)title message:(NSString * _Nullable)message confirmTitle:(NSString * _Nullable)confirmTitle confirmStyle:(XUAlertActionStyle)confirmStyle confirmClick:(nullable void(^)(void))confirmClick;
 
 /**
  底部双按钮 AlertView
