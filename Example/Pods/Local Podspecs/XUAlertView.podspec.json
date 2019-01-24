@@ -1,9 +1,9 @@
 {
   "name": "XUAlertView",
   "version": "0.1.0",
-  "summary": "A short description of XUAlertView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/xupeng/XUAlertView",
+  "summary": "XUAlertView",
+  "description": "Qingting iOS XUAlertView Framework",
+  "homepage": "https://github.com/xupeng48/xualertview",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,18 @@
     "xupeng": "xupeng@qingting.fm"
   },
   "source": {
-    "git": "https://github.com/xupeng/XUAlertView.git",
+    "git": "https://github.com/xupeng48/xualertview.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "XUAlertView/Classes/**/*"
+  "requires_arc": true,
+  "public_header_files": "XUAlertView/Classes/**/*.h",
+  "source_files": "XUAlertView/Classes/**/*",
+  "resource_bundles": {
+    "XUAlertView": [
+      "XUAlertView/Assets/images/*.png"
+    ]
+  }
 }

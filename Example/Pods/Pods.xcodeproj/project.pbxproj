@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0441E82476A9178178DF00C2AEE41E9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2379EEB1B2E42B0DADE15CB60E65F85 /* QuartzCore.framework */; };
+		0653BB61942001EB332690E298476461 /* UIColor+XUAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFDDF420D17F5997DE28B8A94EE3E89 /* UIColor+XUAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D5E847B5619856E1C22A74EC898F69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
+		0D9DF82F876C8D815B519152A9898074 /* XUAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = FC11DACD48B1FA1622A0D38DEEB315C1 /* XUAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		163DC390363C339936B3114C72FE6716 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
 		1D14E5C6A67959D71C1213637B93179C /* Pods-XUAlertView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A8349CFC4E3C7912F429F2E647A499 /* Pods-XUAlertView_Tests-dummy.m */; };
 		2BEDDFF32DA5EB4C87286677BD5428C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
+		33FE1EEB7B3AE482E0AE875999F4F296 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C278F91D435A6750253A706F4B094C3 /* close@3x.png */; };
 		387D066A1A34ED7DF0F716CB3A8B746D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3DE0E5AD4FE42E02964CBC13E9954920 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DF5262877BC4C77F4FE0A49428CC6F /* close@2x.png */; };
 		41B2248835B5535267FE3E2419A05A4A /* Pods-XUAlertView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB17FE59DFB7A6AB82AD33963617146 /* Pods-XUAlertView_Example-dummy.m */; };
 		459F58959A5C947E77A424BF94098D08 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */; };
+		488D8720115426F360B3C3E65ACF19DB /* UIColor+XUAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F59F44EBBDF7D2970FD2FCC0CFEE52F6 /* UIColor+XUAlert.m */; };
 		4C022C88B9E8D527B1426B5281756EDE /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
 		4CF5865BAF828AB9A7C56F3A1B1C856F /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D600539FC2E29EA7E28A2DA8A8B328C /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,22 +27,27 @@
 		59FD5FAEFCF13CD39358A6F36C50BED8 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		620002D55F8D093DFB3E88E2CF8DCC60 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCF8FB06D0D8E2640C57D460AB67AF6 /* XCTest.framework */; };
 		63EA4B9CBBAB30A69C2D73693019FDC5 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		69A958E5E926399D184617A0B4C7B881 /* XUAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EF86796CA5F405040B7C541FDA899C /* XUAlertView.m */; };
 		6B71ACB6D56B970D0B2AD8EE2B79D96F /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
-		6DD2AAC8E7C0103878BF315E8AA3C03F /* XUAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C528F0E2AAFE08440C55BF6C37F349A /* XUAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EC17B6986CC7F9EBDF0521AE86F371B /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
+		717BFC9B2243DDB223827B9DA4E346E0 /* XUAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 442C2F39ED4F41006F47B040133A94A2 /* XUAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73247510D7AD93E5FDBA474B353BF919 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8067D58B7346D9317DF54F7005C04B35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
+		862ED5CDB5807714CA262ABE5E5C6CB9 /* XUAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4091547C0993ED6A0203379F34C2FC39 /* XUAlertAction.m */; };
 		8CAC3B81FFAB2342335164D30A3ACCD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B206F681A10A3CEFD3120DC6A65DCE /* UIKit.framework */; };
 		AE6BA9F0C3C240CB714725A11DD80405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
+		AF5C48FA79C3C2B9C8EA14FA9A68F704 /* XUAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3EEED0F24ACBA87EA63169514A3BAA7 /* XUAlertView.bundle */; };
 		AFF108D6E8D891F7B8148CA0158B2A23 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
 		B08725BB938AA3AACCA3C8C818FA4CF6 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B767E6BED4D7F2162E7572138088CAE7 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 170A7EC0FA110E98364A0069AE7F1889 /* ReplaceMe.m */; };
 		BCDA265400AF5BCF21074C5AF1FD09A8 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CCCDABF45EEF2C94D3677C7015F5F188 /* XUAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98D4E140EF9F32D3B8A9CEE5545B2B /* XUAlertView-dummy.m */; };
+		D36D3E2B00C578E4C45F4DDFE9AFB53F /* XUAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2B6CEB66556836995B39CB4EDB48FA /* XUAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDA23BFEC24AB967884F73CEFA93569B /* UIImage+XUAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B12AD6A39D100D7CB45C663ACF090C7 /* UIImage+XUAlert.m */; };
 		E2E2BC984CCC1978CB9E22B72258C641 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
 		E4877E179010E4E588B6E9E61B047B60 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
 		E5171425BB1C824659761362971B2B59 /* Pods-XUAlertView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 070B0168A44DBE2B685DCBE7B79B0B2C /* Pods-XUAlertView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA2C5FBB576DBC67BE3E2F5897704BBF /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
+		EC3D4AD577B911788EB4F15C7A0D4AA0 /* XUAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADA11B48C048624A2C3D728916FAFB /* XUAlertView-dummy.m */; };
+		F2183834FBD4E368452ADD396C185B4E /* UIImage+XUAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B35D95ECF082BA89019C512E958954C /* UIImage+XUAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,13 @@
 			remoteGlobalIDString = 9E2F6B8CBE06796057F990978A8709F0;
 			remoteInfo = XUAlertView;
 		};
+		A40C112A7FD5DF5ED7B0A8F28AFB3D7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74110CA6A5C7768F3170CC2C153E3A8B;
+			remoteInfo = "XUAlertView-XUAlertView";
+		};
 		F0B65A5C8E887B73CA3F506DD360B9DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -69,62 +86,73 @@
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		070B0168A44DBE2B685DCBE7B79B0B2C /* Pods-XUAlertView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XUAlertView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		10EF86796CA5F405040B7C541FDA899C /* XUAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XUAlertView.m; path = XUAlertView/Classes/XUAlertView.m; sourceTree = "<group>"; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		149CA47C6BAB7C839EF306A5940974A4 /* Pods-XUAlertView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XUAlertView_Example-resources.sh"; sourceTree = "<group>"; };
-		170A7EC0FA110E98364A0069AE7F1889 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = XUAlertView/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		1F3628A3E6F4F3C63D04C68D1FC632D7 /* Pods-XUAlertView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XUAlertView_Example-umbrella.h"; sourceTree = "<group>"; };
 		21F5496CBE7C6F26F1DD28E0A6842CE4 /* Pods-XUAlertView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XUAlertView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		220D1A399F84FBC1F49F140A0C2363C7 /* Pods-XUAlertView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XUAlertView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29A8349CFC4E3C7912F429F2E647A499 /* Pods-XUAlertView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XUAlertView_Tests-dummy.m"; sourceTree = "<group>"; };
 		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		327F62E7D39298DAD571105669BEDD20 /* Pods-XUAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XUAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		33370F684A707668B47B64494703D3C1 /* XUAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XUAlertView.framework; path = XUAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		346B42329A8ACD88B3C7ABB040976F37 /* XUAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XUAlertView-prefix.pch"; sourceTree = "<group>"; };
 		37B206F681A10A3CEFD3120DC6A65DCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		3A1429F6A69E3476D2AEA1BD4DADF319 /* XUAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XUAlertView.xcconfig; sourceTree = "<group>"; };
+		3B35D95ECF082BA89019C512E958954C /* UIImage+XUAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+XUAlert.h"; path = "XUAlertView/Classes/UIImage+XUAlert.h"; sourceTree = "<group>"; };
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		3C364EFDBCA97897E8C8B717000AFE1D /* Pods-XUAlertView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XUAlertView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3CA8E9086CCB46250E163AA35550ADED /* Pods-XUAlertView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XUAlertView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		4091547C0993ED6A0203379F34C2FC39 /* XUAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XUAlertAction.m; path = XUAlertView/Classes/XUAlertAction.m; sourceTree = "<group>"; };
 		409A9E06D8ADF920D8EF8CF85AD97A7B /* Pods-XUAlertView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XUAlertView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		442C2F39ED4F41006F47B040133A94A2 /* XUAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XUAlertView-umbrella.h"; sourceTree = "<group>"; };
 		4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		489CA5FF1FEF9EFC1D2B249A8F88438F /* Pods-XUAlertView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XUAlertView_Tests.modulemap"; sourceTree = "<group>"; };
+		4A2CD6B1F5FC956FE9BA07882A67C514 /* XUAlertView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XUAlertView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4C278F91D435A6750253A706F4B094C3 /* close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "close@3x.png"; path = "XUAlertView/Assets/images/close@3x.png"; sourceTree = "<group>"; };
 		4CCF8FB06D0D8E2640C57D460AB67AF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		5A83DF2F0B1B882F247753E42661953C /* Pods-XUAlertView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XUAlertView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		608E0163DB8CF7AC4D165F1C9A567426 /* Pods-XUAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XUAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		67240F990CF607C21880DD28CDE4622F /* Pods_XUAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XUAlertView_Example.framework; path = "Pods-XUAlertView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E276593855381568F725E69496F29C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DEDED34A7B8E3023D203E2DE64792CD /* XUAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XUAlertView.modulemap; sourceTree = "<group>"; };
+		6A8CCDB599D62D165DED33A2F4571949 /* XUAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XUAlertView.framework; path = XUAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B12AD6A39D100D7CB45C663ACF090C7 /* UIImage+XUAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+XUAlert.m"; path = "XUAlertView/Classes/UIImage+XUAlert.m"; sourceTree = "<group>"; };
+		6BA8826485BF258F980DC786D883965F /* XUAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XUAlertView.modulemap; sourceTree = "<group>"; };
+		751DD03FD7C413B9116535BC83D407BF /* ResourceBundle-XUAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XUAlertView-Info.plist"; sourceTree = "<group>"; };
 		7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		80DF5262877BC4C77F4FE0A49428CC6F /* close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "close@2x.png"; path = "XUAlertView/Assets/images/close@2x.png"; sourceTree = "<group>"; };
+		8111D7AF7B1EADCFFA49A4936A7DC3BC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847C091EF50C93AB483A791883E0D9F7 /* Pods_XUAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XUAlertView_Tests.framework; path = "Pods-XUAlertView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		88CD96950E3012A2EC9C5562E641E9C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8E2B6CEB66556836995B39CB4EDB48FA /* XUAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XUAlertAction.h; path = XUAlertView/Classes/XUAlertAction.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C528F0E2AAFE08440C55BF6C37F349A /* XUAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XUAlertView-umbrella.h"; sourceTree = "<group>"; };
 		9D55F3C22A3C9F48480B625A3D856F8E /* Pods-XUAlertView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XUAlertView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9F267DA8289C5869C2FC07D11C172325 /* Pods-XUAlertView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XUAlertView_Tests-resources.sh"; sourceTree = "<group>"; };
 		A0181DDC45903FE2DB2F798DE9BBCC85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		A6CB259EC6201F8D5FD7F54F216257F9 /* XUAlertView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XUAlertView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ACB17FE59DFB7A6AB82AD33963617146 /* Pods-XUAlertView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XUAlertView_Example-dummy.m"; sourceTree = "<group>"; };
 		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		C125B1F59993F366889FAB5AE496948F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2379EEB1B2E42B0DADE15CB60E65F85 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		C29F03053CBC42FD0994074BCD2FB668 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C42A4CC5A46B3C5C6B3F40BE8D2A24F9 /* Pods_XUAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XUAlertView_Tests.framework; path = "Pods-XUAlertView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF36ACE484905585A20B39053B27BD98 /* XUAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XUAlertView-prefix.pch"; sourceTree = "<group>"; };
-		D535B63D53300E8DE5FA11A350458F0D /* Pods_XUAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XUAlertView_Example.framework; path = "Pods-XUAlertView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5840324B1B54851DB5B497B2D1F40AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		D5D17E09AF6981DA8491D5FD33BF8378 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7ADA11B48C048624A2C3D728916FAFB /* XUAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XUAlertView-dummy.m"; sourceTree = "<group>"; };
 		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		D9A7CD4394BB0CE0B8CEB9734AB6297A /* Pods-XUAlertView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XUAlertView_Example.modulemap"; sourceTree = "<group>"; };
+		DA04D35F7A269150FA7AA4ACBB0FB2FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		E6EDD770B277129D443AD943219E0859 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECC92E9B9E5099AF0FA32D4B84900FA9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		ED98D4E140EF9F32D3B8A9CEE5545B2B /* XUAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XUAlertView-dummy.m"; sourceTree = "<group>"; };
 		EF519A026B10AC73ABBE6E658308B29D /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		F10CBDEE32E5F6BDECFB3D41F7DD0B03 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		F3EEED0F24ACBA87EA63169514A3BAA7 /* XUAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XUAlertView.bundle; path = "XUAlertView-XUAlertView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F427EF28A111A1F7E58C0C8EED1E6E66 /* XUAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XUAlertView.xcconfig; sourceTree = "<group>"; };
+		F59F44EBBDF7D2970FD2FCC0CFEE52F6 /* UIColor+XUAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+XUAlert.m"; path = "XUAlertView/Classes/UIColor+XUAlert.m"; sourceTree = "<group>"; };
 		F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FBFDDF420D17F5997DE28B8A94EE3E89 /* UIColor+XUAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+XUAlert.h"; path = "XUAlertView/Classes/UIColor+XUAlert.h"; sourceTree = "<group>"; };
+		FC11DACD48B1FA1622A0D38DEEB315C1 /* XUAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XUAlertView.h; path = XUAlertView/Classes/XUAlertView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +164,13 @@
 				0441E82476A9178178DF00C2AEE41E9A /* QuartzCore.framework in Frameworks */,
 				8CAC3B81FFAB2342335164D30A3ACCD1 /* UIKit.framework in Frameworks */,
 				620002D55F8D093DFB3E88E2CF8DCC60 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F76E22DAE91231FABA17A9B6E77FB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +201,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0478C6743D9E6AF62FBA02B341F49236 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C125B1F59993F366889FAB5AE496948F /* Info.plist */,
+				751DD03FD7C413B9116535BC83D407BF /* ResourceBundle-XUAlertView-Info.plist */,
+				6BA8826485BF258F980DC786D883965F /* XUAlertView.modulemap */,
+				F427EF28A111A1F7E58C0C8EED1E6E66 /* XUAlertView.xcconfig */,
+				D7ADA11B48C048624A2C3D728916FAFB /* XUAlertView-dummy.m */,
+				346B42329A8ACD88B3C7ABB040976F37 /* XUAlertView-prefix.pch */,
+				442C2F39ED4F41006F47B040133A94A2 /* XUAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XUAlertView";
+			sourceTree = "<group>";
+		};
 		0918946A1AB3BBEB96ED5F38414BB63F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,26 +225,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		0AF104349585B7E02725FCE8FDA83902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8111D7AF7B1EADCFFA49A4936A7DC3BC /* FBSnapshotTestCase.framework */,
+				67240F990CF607C21880DD28CDE4622F /* Pods_XUAlertView_Example.framework */,
+				847C091EF50C93AB483A791883E0D9F7 /* Pods_XUAlertView_Tests.framework */,
+				F3EEED0F24ACBA87EA63169514A3BAA7 /* XUAlertView.bundle */,
+				6A8CCDB599D62D165DED33A2F4571949 /* XUAlertView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				77E6A3533BFFC5453A29188F8955E61A /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		21AE19BF2F9638933FF9C594A897C84D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D5D17E09AF6981DA8491D5FD33BF8378 /* Info.plist */,
-				6DEDED34A7B8E3023D203E2DE64792CD /* XUAlertView.modulemap */,
-				3A1429F6A69E3476D2AEA1BD4DADF319 /* XUAlertView.xcconfig */,
-				ED98D4E140EF9F32D3B8A9CEE5545B2B /* XUAlertView-dummy.m */,
-				CF36ACE484905585A20B39053B27BD98 /* XUAlertView-prefix.pch */,
-				9C528F0E2AAFE08440C55BF6C37F349A /* XUAlertView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XUAlertView";
 			sourceTree = "<group>";
 		};
 		2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */ = {
@@ -240,12 +288,13 @@
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		3A4CD78617FC007D00E96D95087934D3 /* Development Pods */ = {
+		3BC9ED202DA9D3A761E5102AB5128121 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DE940AC894A7F7CEDA5396D6CF3B1994 /* XUAlertView */,
+				80DF5262877BC4C77F4FE0A49428CC6F /* close@2x.png */,
+				4C278F91D435A6750253A706F4B094C3 /* close@3x.png */,
 			);
-			name = "Development Pods";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		3FC99EDB210131823F2D12B0B7FAE6D9 /* Pods-XUAlertView_Example */ = {
@@ -266,27 +315,6 @@
 			path = "Target Support Files/Pods-XUAlertView_Example";
 			sourceTree = "<group>";
 		};
-		4822CCB0721C2538771BFE873BA50183 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D5840324B1B54851DB5B497B2D1F40AF /* LICENSE */,
-				ECC92E9B9E5099AF0FA32D4B84900FA9 /* README.md */,
-				A6CB259EC6201F8D5FD7F54F216257F9 /* XUAlertView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		4D816250282D6017E3BBDF88900946D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E6EDD770B277129D443AD943219E0859 /* FBSnapshotTestCase.framework */,
-				D535B63D53300E8DE5FA11A350458F0D /* Pods_XUAlertView_Example.framework */,
-				C42A4CC5A46B3C5C6B3F40BE8D2A24F9 /* Pods_XUAlertView_Tests.framework */,
-				33370F684A707668B47B64494703D3C1 /* XUAlertView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		77E6A3533BFFC5453A29188F8955E61A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,10 +330,10 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3A4CD78617FC007D00E96D95087934D3 /* Development Pods */,
+				EDC1ADDCFBBDFAF01C9A00B1C34230A0 /* Development Pods */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
-				4D816250282D6017E3BBDF88900946D4 /* Products */,
+				0AF104349585B7E02725FCE8FDA83902 /* Products */,
 				0918946A1AB3BBEB96ED5F38414BB63F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -318,15 +346,41 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		DE940AC894A7F7CEDA5396D6CF3B1994 /* XUAlertView */ = {
+		BC30224E1BAD048DD6CCD392055D1733 /* XUAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				170A7EC0FA110E98364A0069AE7F1889 /* ReplaceMe.m */,
-				4822CCB0721C2538771BFE873BA50183 /* Pod */,
-				21AE19BF2F9638933FF9C594A897C84D /* Support Files */,
+				FBFDDF420D17F5997DE28B8A94EE3E89 /* UIColor+XUAlert.h */,
+				F59F44EBBDF7D2970FD2FCC0CFEE52F6 /* UIColor+XUAlert.m */,
+				3B35D95ECF082BA89019C512E958954C /* UIImage+XUAlert.h */,
+				6B12AD6A39D100D7CB45C663ACF090C7 /* UIImage+XUAlert.m */,
+				8E2B6CEB66556836995B39CB4EDB48FA /* XUAlertAction.h */,
+				4091547C0993ED6A0203379F34C2FC39 /* XUAlertAction.m */,
+				FC11DACD48B1FA1622A0D38DEEB315C1 /* XUAlertView.h */,
+				10EF86796CA5F405040B7C541FDA899C /* XUAlertView.m */,
+				C1D8796B0E0FCEA4224318A94B614D1F /* Pod */,
+				3BC9ED202DA9D3A761E5102AB5128121 /* Resources */,
+				0478C6743D9E6AF62FBA02B341F49236 /* Support Files */,
 			);
 			name = XUAlertView;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		C1D8796B0E0FCEA4224318A94B614D1F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				88CD96950E3012A2EC9C5562E641E9C5 /* LICENSE */,
+				DA04D35F7A269150FA7AA4ACBB0FB2FC /* README.md */,
+				4A2CD6B1F5FC956FE9BA07882A67C514 /* XUAlertView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EDC1ADDCFBBDFAF01C9A00B1C34230A0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC30224E1BAD048DD6CCD392055D1733 /* XUAlertView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		F35791481CAFDD8E7715AE1B44687328 /* Core */ = {
@@ -361,19 +415,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		55FBABDE15DEB6D6C705AD0FF310AD97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0653BB61942001EB332690E298476461 /* UIColor+XUAlert.h in Headers */,
+				F2183834FBD4E368452ADD396C185B4E /* UIImage+XUAlert.h in Headers */,
+				D36D3E2B00C578E4C45F4DDFE9AFB53F /* XUAlertAction.h in Headers */,
+				717BFC9B2243DDB223827B9DA4E346E0 /* XUAlertView-umbrella.h in Headers */,
+				0D9DF82F876C8D815B519152A9898074 /* XUAlertView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73A8B241BC39C185BA6BB0F247FBB1BE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E5171425BB1C824659761362971B2B59 /* Pods-XUAlertView_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		770B8F9B74A2DA0CEF05EE26BB9A0E11 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DD2AAC8E7C0103878BF315E8AA3C03F /* XUAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,8 +477,25 @@
 			);
 			name = "Pods-XUAlertView_Example";
 			productName = "Pods-XUAlertView_Example";
-			productReference = D535B63D53300E8DE5FA11A350458F0D /* Pods_XUAlertView_Example.framework */;
+			productReference = 67240F990CF607C21880DD28CDE4622F /* Pods_XUAlertView_Example.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		74110CA6A5C7768F3170CC2C153E3A8B /* XUAlertView-XUAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EE0DDDF8FA413925B01BDC7D52D17BD /* Build configuration list for PBXNativeTarget "XUAlertView-XUAlertView" */;
+			buildPhases = (
+				B2FAEB69E72ABAD321DEC4E04B13CB33 /* Sources */,
+				4F76E22DAE91231FABA17A9B6E77FB71 /* Frameworks */,
+				9F3E52041D37A28333C4D8D5000DE680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XUAlertView-XUAlertView";
+			productName = "XUAlertView-XUAlertView";
+			productReference = F3EEED0F24ACBA87EA63169514A3BAA7 /* XUAlertView.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		8CB6C098A79F25CB93E15ADA1B9AA37B /* Pods-XUAlertView_Tests */ = {
 			isa = PBXNativeTarget;
@@ -439,7 +514,7 @@
 			);
 			name = "Pods-XUAlertView_Tests";
 			productName = "Pods-XUAlertView_Tests";
-			productReference = C42A4CC5A46B3C5C6B3F40BE8D2A24F9 /* Pods_XUAlertView_Tests.framework */;
+			productReference = 847C091EF50C93AB483A791883E0D9F7 /* Pods_XUAlertView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9208F82521C84CC962FB475DC38D3371 /* FBSnapshotTestCase */ = {
@@ -457,25 +532,26 @@
 			);
 			name = FBSnapshotTestCase;
 			productName = FBSnapshotTestCase;
-			productReference = E6EDD770B277129D443AD943219E0859 /* FBSnapshotTestCase.framework */;
+			productReference = 8111D7AF7B1EADCFFA49A4936A7DC3BC /* FBSnapshotTestCase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9E2F6B8CBE06796057F990978A8709F0 /* XUAlertView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54F962E0657594229F72CC0D9422AA05 /* Build configuration list for PBXNativeTarget "XUAlertView" */;
 			buildPhases = (
-				770B8F9B74A2DA0CEF05EE26BB9A0E11 /* Headers */,
-				464D93581715DF49F777D2547FF5951B /* Sources */,
+				55FBABDE15DEB6D6C705AD0FF310AD97 /* Headers */,
+				606E8BAD21EFA25C09C6D6E0A2716A46 /* Sources */,
 				EC7A2476EC08D791B132693985355111 /* Frameworks */,
-				7AD270E46C8FCB0091B1DE1375A1E437 /* Resources */,
+				CD8F4B63A6DA4038F2058A4F9F4B7CB8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F4CFF88B896B37E29FFA8364AD3DB9C2 /* PBXTargetDependency */,
 			);
 			name = XUAlertView;
 			productName = XUAlertView;
-			productReference = 33370F684A707668B47B64494703D3C1 /* XUAlertView.framework */;
+			productReference = 6A8CCDB599D62D165DED33A2F4571949 /* XUAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -495,7 +571,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4D816250282D6017E3BBDF88900946D4 /* Products */;
+			productRefGroup = 0AF104349585B7E02725FCE8FDA83902 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -503,6 +579,7 @@
 				2546CD7B05908E7142BE15962EF7AF33 /* Pods-XUAlertView_Example */,
 				8CB6C098A79F25CB93E15ADA1B9AA37B /* Pods-XUAlertView_Tests */,
 				9E2F6B8CBE06796057F990978A8709F0 /* XUAlertView */,
+				74110CA6A5C7768F3170CC2C153E3A8B /* XUAlertView-XUAlertView */,
 			);
 		};
 /* End PBXProject section */
@@ -515,10 +592,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AD270E46C8FCB0091B1DE1375A1E437 /* Resources */ = {
+		9F3E52041D37A28333C4D8D5000DE680 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE0E5AD4FE42E02964CBC13E9954920 /* close@2x.png in Resources */,
+				33FE1EEB7B3AE482E0AE875999F4F296 /* close@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +615,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD8F4B63A6DA4038F2058A4F9F4B7CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5C48FA79C3C2B9C8EA14FA9A68F704 /* XUAlertView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -544,15 +631,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B2248835B5535267FE3E2419A05A4A /* Pods-XUAlertView_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		464D93581715DF49F777D2547FF5951B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B767E6BED4D7F2162E7572138088CAE7 /* ReplaceMe.m in Sources */,
-				CCCDABF45EEF2C94D3677C7015F5F188 /* XUAlertView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,11 +650,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		606E8BAD21EFA25C09C6D6E0A2716A46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488D8720115426F360B3C3E65ACF19DB /* UIColor+XUAlert.m in Sources */,
+				DDA23BFEC24AB967884F73CEFA93569B /* UIImage+XUAlert.m in Sources */,
+				862ED5CDB5807714CA262ABE5E5C6CB9 /* XUAlertAction.m in Sources */,
+				EC3D4AD577B911788EB4F15C7A0D4AA0 /* XUAlertView-dummy.m in Sources */,
+				69A958E5E926399D184617A0B4C7B881 /* XUAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		817D997EC6EC39189A980E0C6A47CB92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D14E5C6A67959D71C1213637B93179C /* Pods-XUAlertView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2FAEB69E72ABAD321DEC4E04B13CB33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,9 +698,31 @@
 			target = 2546CD7B05908E7142BE15962EF7AF33 /* Pods-XUAlertView_Example */;
 			targetProxy = 5602CD4F48B7FC0D6C8CE8F51501A3B2 /* PBXContainerItemProxy */;
 		};
+		F4CFF88B896B37E29FFA8364AD3DB9C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XUAlertView-XUAlertView";
+			target = 74110CA6A5C7768F3170CC2C153E3A8B /* XUAlertView-XUAlertView */;
+			targetProxy = A40C112A7FD5DF5ED7B0A8F28AFB3D7A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		399783B6CC94F4316EA1F4F23423105D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F427EF28A111A1F7E58C0C8EED1E6E66 /* XUAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XUAlertView";
+				INFOPLIST_FILE = "Target Support Files/XUAlertView/ResourceBundle-XUAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XUAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		42653CED19211D4DE2E1CE995E2CE1D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */;
@@ -669,7 +788,7 @@
 		};
 		5DE76955F4CB3B301A91EFE3FF255422 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A1429F6A69E3476D2AEA1BD4DADF319 /* XUAlertView.xcconfig */;
+			baseConfigurationReference = F427EF28A111A1F7E58C0C8EED1E6E66 /* XUAlertView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -731,7 +850,7 @@
 		};
 		81EDA18E0C24C88D6CC2B075AAC205B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A1429F6A69E3476D2AEA1BD4DADF319 /* XUAlertView.xcconfig */;
+			baseConfigurationReference = F427EF28A111A1F7E58C0C8EED1E6E66 /* XUAlertView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -954,6 +1073,22 @@
 			};
 			name = Debug;
 		};
+		BC39DC354EF68FE62CA0B8496E740534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F427EF28A111A1F7E58C0C8EED1E6E66 /* XUAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XUAlertView";
+				INFOPLIST_FILE = "Target Support Files/XUAlertView/ResourceBundle-XUAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XUAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		FD45B608EDCCA10DCFD7C790CD8BA4A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 608E0163DB8CF7AC4D165F1C9A567426 /* Pods-XUAlertView_Example.release.xcconfig */;
@@ -1023,6 +1158,15 @@
 			buildConfigurations = (
 				83F33965B8BFBE67D4EED55A7A26BA98 /* Debug */,
 				9C767611267C53419303EA8FA26F2D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EE0DDDF8FA413925B01BDC7D52D17BD /* Build configuration list for PBXNativeTarget "XUAlertView-XUAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				399783B6CC94F4316EA1F4F23423105D /* Debug */,
+				BC39DC354EF68FE62CA0B8496E740534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "UIColor+XUAlert.h"
+#import "UIImage+XUAlert.h"
+#import "XUAlertAction.h"
+#import "XUAlertView.h"
 
 FOUNDATION_EXPORT double XUAlertViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char XUAlertViewVersionString[];
