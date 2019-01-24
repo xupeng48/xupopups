@@ -1,0 +1,6 @@
+framework module XUAlertView {
+  umbrella header "XUAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}

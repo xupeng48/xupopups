@@ -1,0 +1,6 @@
+framework module Pods_XUAlertView_Example {
+  umbrella header "Pods-XUAlertView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
