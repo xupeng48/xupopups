@@ -1,6 +1,6 @@
 ## XUAlertView
 
-XUAlertView是蜻蜓FM iOS客户端对蜻蜓FM风格AlertView的封装。
+XUAlertView是对iOS中自定义AlertView的封装。
 
 
 
