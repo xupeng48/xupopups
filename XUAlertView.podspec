@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-    s.name             = 'QTAlertView'
+    s.name             = 'XUAlertView'
     s.version          = '0.1.0'
-    s.summary          = 'QTAlertView'
+    s.summary          = 'XUAlertView'
     s.description      = <<-DESC
-    Qingting iOS QTAlertView Framework
+    Qingting iOS XUAlertView Framework
     DESC
     
     s.homepage         = 'https://github.com/xupeng48/xualertview'
@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '8.0'
     s.requires_arc = true
     
-    s.public_header_files = 'QTAlertView/Classes/**/*.h'
-    s.source_files = 'QTAlertView/Classes/**/*'
+    s.public_header_files = 'XUAlertView/Classes/**/*.h'
+    s.source_files = 'XUAlertView/Classes/**/*'
     s.resource_bundles = {
-        'QTAlertView' => ['QTAlertView/Assets/images/*.png']
+        'XUAlertView' => ['XUAlertView/Assets/images/*.png']
     }
     
 end
