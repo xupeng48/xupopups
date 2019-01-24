@@ -8,7 +8,7 @@ XUAlertView是蜻蜓FM iOS客户端对蜻蜓FM风格AlertView的封装。
 
 ```
 // tag替换为最新的
-pod 'XUAlertView', :git => "git@git2.qingtingfm.com:CocoaPods/XUAlertView.git", :tag => '0.1.0'
+pod 'XUAlertView', :git => "https://github.com/xupeng48/xualertview.git", :tag => '0.1.0'
 ```
 
 ## 使用
