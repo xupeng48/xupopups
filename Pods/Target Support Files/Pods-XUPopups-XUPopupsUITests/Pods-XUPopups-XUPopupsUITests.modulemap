@@ -1,0 +1,6 @@
+framework module Pods_XUPopups_XUPopupsUITests {
+  umbrella header "Pods-XUPopups-XUPopupsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
