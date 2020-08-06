@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XUPopups'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'XUPopups'
   s.description      = <<-DESC
                           Qingting iOS XUPopups Framework
