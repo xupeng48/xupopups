@@ -43,8 +43,8 @@ QTAlertView *alert = [QTAlertView alertWithIconImage:nil
 [alert display];
 ```
 效果如下:  
-<img src="/XUPopups/images/AlertView1.png" width="375">
-<img src="/XUPopups/images/AlertView2.png" width="375">
+<img src="XUPopups/images/AlertView1.png" width="375">
+<img src="XUPopups/images/AlertView2.png" width="375">
 
 ### QTAlertView部分快捷方法
 ```
@@ -116,7 +116,7 @@ QTSheetView *sheet = [QTSheetView sheetView];
 ```
 
 效果如下: 
-<img src="/XUPopups/images/SheetView.png" width="375">
+<img src="XUPopups/images/SheetView.png" width="375">
 
 
 ### QTToast基础使用
@@ -138,7 +138,7 @@ QTSheetView *sheet = [QTSheetView sheetView];
 ```
 
 效果如下:  
-<img src="/XUPopups/images/Toast.png" width="375">
+<img src="XUPopups/images/Toast.png" width="375">
 
 
 ## 内容介绍

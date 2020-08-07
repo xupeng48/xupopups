@@ -32,6 +32,10 @@
 		A9803EBF24DBF762006D0BC2 /* UIImage+XUPopups.m in Sources */ = {isa = PBXBuildFile; fileRef = A9803EB024DBF762006D0BC2 /* UIImage+XUPopups.m */; };
 		A9803EC024DBF762006D0BC2 /* popups_alertview_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9803EB424DBF762006D0BC2 /* popups_alertview_close@2x.png */; };
 		A9803EC124DBF762006D0BC2 /* popups_alertview_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9803EB524DBF762006D0BC2 /* popups_alertview_close@3x.png */; };
+		A9D3B91524DCFBDF00A1129B /* SheetView.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D3B91124DCFBDF00A1129B /* SheetView.png */; };
+		A9D3B91624DCFBDF00A1129B /* AlertView2.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D3B91224DCFBDF00A1129B /* AlertView2.png */; };
+		A9D3B91724DCFBDF00A1129B /* Toast.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D3B91324DCFBDF00A1129B /* Toast.png */; };
+		A9D3B91824DCFBDF00A1129B /* AlertView1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D3B91424DCFBDF00A1129B /* AlertView1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,10 @@
 		A9803EB124DBF762006D0BC2 /* UIColor+XUPopups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XUPopups.h"; sourceTree = "<group>"; };
 		A9803EB424DBF762006D0BC2 /* popups_alertview_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popups_alertview_close@2x.png"; sourceTree = "<group>"; };
 		A9803EB524DBF762006D0BC2 /* popups_alertview_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popups_alertview_close@3x.png"; sourceTree = "<group>"; };
+		A9D3B91124DCFBDF00A1129B /* SheetView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SheetView.png; sourceTree = "<group>"; };
+		A9D3B91224DCFBDF00A1129B /* AlertView2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlertView2.png; sourceTree = "<group>"; };
+		A9D3B91324DCFBDF00A1129B /* Toast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Toast.png; sourceTree = "<group>"; };
+		A9D3B91424DCFBDF00A1129B /* AlertView1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlertView1.png; sourceTree = "<group>"; };
 		BF811E7A35A5A91122D8280D /* Pods-XUPopups.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XUPopups.release.xcconfig"; path = "Target Support Files/Pods-XUPopups/Pods-XUPopups.release.xcconfig"; sourceTree = "<group>"; };
 		C766898D553C1C2A6DB00BEE /* Pods-XUPopups-XUPopupsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XUPopups-XUPopupsUITests.debug.xcconfig"; path = "Target Support Files/Pods-XUPopups-XUPopupsUITests/Pods-XUPopups-XUPopupsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBF583A43DB2DB59A44F2E35 /* Pods_XUPopupsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XUPopupsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +182,7 @@
 		A9803E3024DBF48A006D0BC2 /* XUPopups */ = {
 			isa = PBXGroup;
 			children = (
+				A9D3B91024DCFBDF00A1129B /* images */,
 				A9803E3124DBF48A006D0BC2 /* AppDelegate.h */,
 				A9803E3224DBF48A006D0BC2 /* AppDelegate.m */,
 				A9803E3724DBF48A006D0BC2 /* ViewController.h */,
@@ -286,6 +295,17 @@
 			children = (
 				A9803EB424DBF762006D0BC2 /* popups_alertview_close@2x.png */,
 				A9803EB524DBF762006D0BC2 /* popups_alertview_close@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A9D3B91024DCFBDF00A1129B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A9D3B91124DCFBDF00A1129B /* SheetView.png */,
+				A9D3B91224DCFBDF00A1129B /* AlertView2.png */,
+				A9D3B91324DCFBDF00A1129B /* Toast.png */,
+				A9D3B91424DCFBDF00A1129B /* AlertView1.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -407,9 +427,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9803E4124DBF48B006D0BC2 /* LaunchScreen.storyboard in Resources */,
+				A9D3B91724DCFBDF00A1129B /* Toast.png in Resources */,
+				A9D3B91624DCFBDF00A1129B /* AlertView2.png in Resources */,
 				A9803EC124DBF762006D0BC2 /* popups_alertview_close@3x.png in Resources */,
 				A9803E3E24DBF48B006D0BC2 /* Assets.xcassets in Resources */,
 				A9803E6924DBF55D006D0BC2 /* README.md in Resources */,
+				A9D3B91524DCFBDF00A1129B /* SheetView.png in Resources */,
+				A9D3B91824DCFBDF00A1129B /* AlertView1.png in Resources */,
 				A9803E6B24DBF55D006D0BC2 /* XUPopups.podspec in Resources */,
 				A9803E6A24DBF55D006D0BC2 /* LICENSE in Resources */,
 				A9803EC024DBF762006D0BC2 /* popups_alertview_close@2x.png in Resources */,
