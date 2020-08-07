@@ -1,6 +1,6 @@
-## QTAlertView
+## XUPopups
 
-QTAlertView是蜻蜓FM iOS客户端对蜻蜓FM风格弹窗的封装，包括Alert和Sheet两种。
+XUPopups包括了AlertView、SheetView、Toast与用户进行交互的提醒样式
 
 
 
@@ -8,7 +8,7 @@ QTAlertView是蜻蜓FM iOS客户端对蜻蜓FM风格弹窗的封装，包括Aler
 
 ```
 // tag替换为最新的
-pod 'QTAlertView', :git => "git@git2.qingtingfm.com:CocoaPods/qtalertview.git", :tag => '0.1.0'
+pod 'XUPopups', :git => "https://github.com/xupeng48/xupopups.git", :tag => '0.2.0'
 ```
 
 ## 使用
@@ -43,7 +43,8 @@ QTAlertView *alert = [QTAlertView alertWithIconImage:nil
 [alert display];
 ```
 效果如下:  
-<img src="./Example/images/header.png" width="375">
+<img src="./XUPopups/images/AlertView1.png" width="375">
+<img src="./XUPopups/images/AlertView2.png" width="375">
 
 ### QTAlertView部分快捷方法
 ```
@@ -113,6 +114,28 @@ QTSheetView *sheet = [QTSheetView sheetView];
 ```
 [alert display];
 ```
+<img src="./XUPopups/images/SheetView.png" width="375">
+
+
+### QTToast基础使用
+```
+[XU_HUDMAG displayMessage:@"hello, world"];
+
+/// 弹出文字、2秒后消失
+[XU_HUDMAG displayMessage:@"hello, world" duration:2.0];
+
+/// 带文字的转圈圈，当为空时，只有转圈圈。
+[XU_HUDMAG displayIndicateWithMessage:@"hello, world"];
+
+/// 隐藏任何Toast
+[XU_HUDMAG hideHUDView];
+
+/// 带有成功动画的Toast
+[XU_HUDMAG displaySuccessMessage:@"hello, world" duration:2];
+
+```
+<img src="./XUPopups/images/Toast.png" width="375">
+
 
 ## 内容介绍
 
