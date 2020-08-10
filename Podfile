@@ -7,6 +7,8 @@ target 'XUPopups' do
 
   # Pods for XUPopups
 
+#  pod 'XUPopups', :git => "https://github.com/xupeng48/xupopups.git", :tag => '0.2.0'
+  
   target 'XUPopupsTests' do
     inherit! :search_paths
     # Pods for testing
